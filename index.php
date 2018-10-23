@@ -5,7 +5,9 @@
 	<section id="video-home">
 		<video  src="img/bkground-video/The-mirage.mp4" autoplay muted loop></video>
 		<h1 class="main-title">Discover what's <br> inside</h1>
-		<img src="img/play.png" alt="">
+		<div class="play-circle">
+			<img src="img/play.png" alt="">
+		</div>
 		<h4>VIVÍ LA EXPERIENCIA</h4>
 	</section>
 
@@ -35,7 +37,7 @@
 
 					<div class="ver-mas-btn">
 						<a href="">
-							<div class="left">+</div><p class="left">Ver más</p>
+							<div class="left">+</div><p class="left"><b>Ver más</b></p>
 						</a>
 					</div>
 
@@ -62,7 +64,7 @@
 							<br>
 							<div class="ver-mas-btn center-block">
 								<a href="">
-									<div class="left">+</div><p class="left">Ver más</p>
+									<div class="left">+</div><p class="left"><b>Ver más</b></p>
 								</a>
 							</div>
 						</div>
@@ -84,7 +86,7 @@
 		
 							<div class="ver-mas-btn center-block">
 								<a href="">
-									<div class="left">+</div><p class="left">Ver más</p>
+									<div class="left">+</div><p class="left"><b>Ver más</b></p>
 								</a>
 							</div>
 						</div>
@@ -140,7 +142,7 @@
 						<br>
 						<div class="ver-mas-btn right">
 								<a href="">
-									<div class="left">+</div><p class="left">Enviar</p>
+									<div class="left">+</div><p class="left"><b>Enviar</b></p>
 								</a>
 							</div>
 					</form>

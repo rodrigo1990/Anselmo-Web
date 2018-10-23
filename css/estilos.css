@@ -4,6 +4,13 @@
 }
 
 @font-face {
+    font-family:PlayfairDisplay-Regular;
+    src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+
+
+
+@font-face {
     font-family: Gotham-black;
     src: url(fonts/GothamBlack.otf);
 }
@@ -39,6 +46,10 @@ h1{
 
 }
 
+p{
+	font-family:GothamBook;
+}
+
 h3{
 	font-family:Gotham-black; 
 }
@@ -48,6 +59,7 @@ h3{
     top: 45%;
     border: 2px solid #CD912A;
     font-size: 3rem;
+    font-family: PlayfairDisplay-Regular;
     color: #CD912A;
     height: 150px;
     width: 150px;
@@ -55,13 +67,77 @@ h3{
     text-align: center;
     padding-top: 47px;
     z-index: 1000;
+    transform: scale(1);
+
+	transition:transform 0.5s;
 
 }
+
+
+.fixed-btn:after{
+    pointer-events: none;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    box-sizing: content-box;
+     z-index: -1; 
+    background-color: #CD912A;
+
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.19,1,.22,1);
+
+    -o-transition: -o-transform .4s cubic-bezier(.19,1,.22,1);
+
+    transition: transform .4s cubic-bezier(.19,1,.22,1);
+
+    -webkit-transform-origin: 50% 50%;
+
+    -o-transform-origin: 50% 50%;
+
+    transform-origin: 50% 50%;
+
+    -webkit-transform: scale(0);
+
+    -khtml-transform: scale(0);
+
+    -o-transform: scale(0);
+
+    transform: scale(0);
+    margin: -49px 0px -8px -136px;
+
+    width: 150px;
+    height: 150px;
+
+    transition:transform 0.25s;
+
+}
+
+
+
+.fixed-btn:hover:after{
+	webkit-transform: scale(0.9);
+
+    -khtml-transform: scale(0.9);
+
+    -o-transform: scale(0.9);
+
+    transform: scale(0.9);
+}
+
+
 
 .fixed-btn:hover{
 	text-decoration: none;
-	color:#CD912A;
+	color:white;
+	transform: scale(1.1);
+
+	transition:transform 0.5s, color 0.5s;
 }
+
+
+
+
+
+
 
 .ver-mas-btn{
     height: 63px;
@@ -137,6 +213,8 @@ color:white;
  .ul-nav{
  	padding:0 !important;
  }
+
+
 /*------------------Main Nav ----------------*/
 
 header{
@@ -238,7 +316,8 @@ section#video-home video{
 
 
 section#video-home h4{
-	font-size: 4rem;
+	font-family:Gotham-black; 
+	font-size: 3.1rem;
 
 }
 
@@ -249,11 +328,81 @@ section#video-home h1, section#video-home h4{
 
 }
 
-
-section#video-home img{
-	width: 150px;
-	margin:28px 0 28px 0;
+section#video-home .play-circle{
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-top: 28px;
+    padding-left: 9px;
+  	margin:0 auto;
+  	cursor:pointer;
 }
+
+
+section#video-home .play-circle:after{
+    pointer-events: none;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    box-sizing: content-box;
+     z-index: -1; 
+    background-color: #fff;
+
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.19,1,.22,1);
+
+    -o-transition: -o-transform .4s cubic-bezier(.19,1,.22,1);
+
+    transition: transform .4s cubic-bezier(.19,1,.22,1);
+
+    -webkit-transform-origin: 50% 50%;
+
+    -o-transform-origin: 50% 50%;
+
+    transform-origin: 50% 50%;
+
+    -webkit-transform: scale(0);
+
+    -khtml-transform: scale(0);
+
+    -o-transform: scale(0);
+
+    transform: scale(0);
+
+    margin: -29px 10px -8px -68px;
+    width: 100px;
+    height: 100px;
+
+    transition:transform 0.25s;
+}
+
+section#video-home .play-circle img{
+	width: 28px;
+}
+
+
+section#video-home .play-circle:hover:after{
+    -webkit-transform: scale(1);
+
+    -khtml-transform: scale(1);
+
+    -o-transform: scale(1);
+
+    transform: scale(1);
+}
+
+
+section#video-home .play-circle:hover img{
+    filter:invert(90%);
+}
+
+
+
+
+
+
+
+
 
 
 /*--------------- 			  --------------*/
@@ -328,7 +477,7 @@ section#almacen .background .text-cont{
 
 
 section#almacen .ver-mas-btn{
-	width: 100px;
+	width: 110px;
 }
 
 
