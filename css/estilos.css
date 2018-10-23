@@ -1,0 +1,435 @@
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url(fonts/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gotham-black;
+    src: url(fonts/GothamBlack.otf);
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url(fonts/GothamBook.otf);
+}
+
+
+
+@font-face {
+    font-family: GothamBold;
+    src: url(fonts/GothamBold.otf);
+}
+
+
+/*---------------------------------------------*/
+/*------------------GENERAL--------------------*/
+body{
+	background-color: white;
+	overflow-x: hidden;
+}
+
+h1{
+	font-family: PlayfairDisplay-Bold;
+}
+
+
+.main-title{
+	color:white;
+	font-size: 10rem;
+
+}
+
+h3{
+	font-family:Gotham-black; 
+}
+.fixed-btn{
+    position: fixed;
+    right: 0px;
+    top: 45%;
+    border: 2px solid #CD912A;
+    font-size: 3rem;
+    color: #CD912A;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 47px;
+    z-index: 1000;
+
+}
+
+.fixed-btn:hover{
+	text-decoration: none;
+	color:#CD912A;
+}
+
+.ver-mas-btn{
+    height: 63px;
+}
+
+.ver-mas-btn a{
+	color:#CD912A;
+	font-weight: bold;
+}
+
+.ver-mas-btn div{
+    background-color: #CD912A;
+    color: white;
+    padding: 2px 8px 2px 8px;
+    border-radius: 50%;
+}
+
+.ver-mas-btn p{
+	font-size: 1.8rem;
+    margin-left: 5px;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.section-title-cont{
+	padding:60px;
+}
+
+.secondary-title{
+	font-size: 6rem;
+	color:white;
+}
+
+.section-title{
+	font-size: 6rem;
+	color:#808080;
+}
+
+hr.linea{
+	height: 4px;
+	width: 25px;
+	background-color: black;
+	margin: 14px 0 14px 0;
+}
+
+
+
+.text-box{
+	width: 150px;
+}
+
+.bajada-right{
+	margin-right: -38px;
+}
+
+
+.text-cont .epigrafe { 
+color:white;
+
+
+ }
+
+ .section-margin-top{
+ 	margin-top: 3%;
+ }
+
+ .ul-nav{
+ 	padding:0 !important;
+ }
+/*------------------Main Nav ----------------*/
+
+header{
+	position:fixed;
+	left: 0;
+    right: 0;
+    top:10px;
+    z-index: 1000;
+
+}
+
+header nav img.logo{
+	width: 209px;
+}
+
+
+
+
+header nav .main-nav,header nav .second-nav{
+	display:block;
+	list-style: none;
+	float:right;
+}
+
+
+
+
+
+
+header nav .second-nav{
+	width: 239px;	
+}
+
+header nav .main-nav{
+	width: 600px;
+}
+
+
+ header nav .main-nav-cont{
+	padding:13px;
+}
+
+
+header nav .main-nav li,header nav .second-nav li{
+	float:left;
+	list-style: none;
+
+}
+header nav .main-nav li{
+	margin-left: 2%;
+
+	
+}
+header nav .second-nav li{
+	margin-left: 3%;
+	
+}
+
+
+header nav ul li a {
+	color:white;
+}
+
+
+header nav .second-nav li a{
+	font-family: GothamBold;
+
+}
+
+header nav .main-nav li a{
+	font-family: GothamBook;
+
+}
+
+
+/*--------------- 			  --------------*/
+				/*VIDEO HOME SECTION*/
+/*---------------             --------------*/
+
+section#video-home{
+	/*background-image: url("../img/bkground/home-bk.jpg");
+	background-position: center;
+	background-repeat: no-repeat;*/
+	height: 100vh;
+	text-align:center;
+	padding:11%;
+}
+
+section#video-home video{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+
+
+section#video-home h4{
+	font-size: 4rem;
+
+}
+
+
+section#video-home h1, section#video-home h4{
+	margin:0;
+	color:white;
+
+}
+
+
+section#video-home img{
+	width: 150px;
+	margin:28px 0 28px 0;
+}
+
+
+/*--------------- 			  --------------*/
+			/* ESPACIOS SECTION */
+/*---------------             --------------*/
+
+section#espacios .background{
+	background-image: url(../img/bkground/home-bk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 67vh;
+}
+
+
+section#espacios .background .text-cont{
+	    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 64%;
+    border: 5px solid white;
+    width: 80%;
+    font-family: GothamBook;
+
+}
+
+section#espacios .background .text-cont .epigrafe{
+
+    font-family: GothamBook;
+    line-height: 35px;
+
+}
+
+
+
+
+section#espacios .ver-mas-btn{
+	width: 114px;
+}
+
+/*--------------- 			  --------------*/
+			/* ALMACEN SECTION */
+/*---------------             --------------*/
+
+
+
+
+section#almacen .background{
+	background-image: url(../img/bkground/home-bk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 67vh;
+}
+
+
+section#almacen .background .text-cont{
+	    position: absolute;
+    left: 15%;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 52%;
+    border: 5px solid white;
+    width: 23%;
+    padding: 3%;
+}
+
+
+section#almacen .ver-mas-btn{
+	width: 100px;
+}
+
+
+/*--------------- 			  --------------*/
+			/* authentic SECTION */
+/*---------------             --------------*/
+
+
+
+section#authentic .background{
+	background-image: url(../img/bkground/home-bk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 67vh;
+}
+
+section#authentic .background .text-cont{
+	     position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 52%;
+    width: 80%;
+}
+
+
+section#authentic .background .text-cont>h3{
+	color:white;
+}
+
+section#authentic .background .text-cont a{
+	color:#CD912A;
+	font-size: 2rem;
+}
+
+
+/*--------------- 			  --------------*/
+			/* contacto SECTION */
+/*---------------             --------------*/
+
+
+section#contacto .iso{
+	width: 82px;
+}
+
+section#contacto input{
+  	outline: 0;
+	border:0;
+	margin-top: 1%;
+	display:block;
+	width: 100%;
+	padding:5px;
+	border-bottom:1px solid black;
+}
+
+
+section#contacto input:focus{
+border-bottom:1px solid #CD912A;
+transition:border-bottom 0.5s;	
+}
+
+
+section#contacto input:focus::-webkit-input-placeholder{
+color: #CD912A;	
+transition:color 0.5s;
+}
+
+section#contacto h2{
+	font-family: GothamBlack;
+}
+
+
+
+
+/*--------------- 			  --------------*/
+				  /* FOOTER */
+/*---------------             --------------*/
+
+
+footer{
+	background-color: black;
+	color:white;
+	padding:10px 0 0px 0;
+}
+
+ul.flex{
+      display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    list-style:none;
+}
+
+
+footer .iso{
+	width:22px;
+	filter:invert(100%);
+}
