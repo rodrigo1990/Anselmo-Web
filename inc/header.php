@@ -2,16 +2,16 @@
 	<nav>
 		<div class="row">
 			<div class="container">
-				<div class="col-sm-3">
+				<div class="col-xs-3 col-sm-3">
 					<img src="img/logo-white.png" alt="Anselmo Curio Collection by Hilton" class="img-responsive logo">
 				</div>
-				<div class="col-sm-9">
+				<div class="hidden-xs col-sm-9">
 					<div class="col-sm-12 second-nav-cont">
 						<ul class="second-nav ul-nav">
 							<li><a href="">ESP</a></li>
 							<li><a href="">ENG</a></li>
-							<li><a href="">F</a></li>
-							<li><a href="">IG</a></li>
+							<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href=""><i class="fab fa-instagram"></i></a></li>
 							<li><a href="">CALENDAR</a></li>
 						</ul>
 					</div>

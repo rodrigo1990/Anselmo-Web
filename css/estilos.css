@@ -35,7 +35,7 @@ body{
 	overflow-x: hidden;
 }
 
-h1{
+h1,h2{
 	font-family: PlayfairDisplay-Bold;
 }
 
@@ -141,6 +141,7 @@ h3{
 
 .ver-mas-btn{
     height: 63px;
+    cursor:pointer;
 }
 
 .ver-mas-btn a{
@@ -153,12 +154,37 @@ h3{
     color: white;
     padding: 2px 8px 2px 8px;
     border-radius: 50%;
+    transform:scale(1);
+    transition:transform 0.25s;
 }
 
 .ver-mas-btn p{
 	font-size: 1.8rem;
     margin-left: 5px;
 }
+
+.ver-mas-btn p:after {
+        content: "";
+        display: block;
+        background-color: #CD912A;
+        height: 2px;
+        width: 0%;
+        -webkit-transition: 0.2s width;
+        transition: 0.2s width;
+}
+
+.ver-mas-btn:hover div{
+    transform:scale(1.25);
+    transition:transform 0.25s;
+}
+
+.ver-mas-btn:hover p:after{
+    width: 100%;
+    transition:width 0.25;
+}
+
+
+
 
 .left{
 	float:left;
@@ -215,20 +241,92 @@ color:white;
  }
 
 
+.background{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 67vh;
+}
+
+
 /*------------------Main Nav ----------------*/
 
 header{
+    padding-top: 13px;
 	position:fixed;
 	left: 0;
     right: 0;
-    top:10px;
+    top:0;
     z-index: 1000;
 
 }
 
-header nav img.logo{
-	width: 209px;
+
+header:after{
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 158%;
+    top: -30px;
+    left: -1px;
+    position: absolute;
+    right: 0;
+    -webkit-transform: rotate(-.7deg) translate(0,-15%);
+    -khtml-transform: rotate(-.7deg) translate(0,-15%);
+    -o-transform: rotate(-.7deg) translate(0,-15%);
+    transform: rotate(-.7deg) translate(0,-15%);
+    z-index: -1;
+    transform: rotate(-.7deg) translate(0,-15%);
+
 }
+
+.white-header:after {
+    background: rgba(225,225,225,0.8);
+    transition:background 0.5s;
+}
+
+header nav img.logo{
+	width: 117px;
+}
+
+
+
+
+
+header nav a i{
+    color:white;
+}
+
+
+
+header nav ul li a:after {
+        content: "";
+        display: block;
+        background-color: white;
+        height: 2px;
+        width: 0%;
+        -webkit-transition: 0.2s width;
+        transition: 0.2s width;
+
+    }
+
+.black-after:after{
+    background-color: black;
+}
+
+
+
+header nav ul li a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover:after {
+        width:100%;
+        transition:width 1s;
+
+    }
 
 
 
@@ -254,7 +352,7 @@ header nav .main-nav{
 
 
  header nav .main-nav-cont{
-	padding:13px;
+	padding:0px;
 }
 
 
@@ -269,7 +367,7 @@ header nav .main-nav li{
 	
 }
 header nav .second-nav li{
-	margin-left: 3%;
+	margin-left: 15px;
 	
 }
 
@@ -325,6 +423,8 @@ section#video-home h4{
 section#video-home h1, section#video-home h4{
 	margin:0;
 	color:white;
+    margin-top: 2%;
+    padding-bottom: 2%;
 
 }
 
@@ -409,13 +509,6 @@ section#video-home .play-circle:hover img{
 			/* ESPACIOS SECTION */
 /*---------------             --------------*/
 
-section#espacios .background{
-	background-image: url(../img/bkground/home-bk.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 67vh;
-}
 
 
 section#espacios .background .text-cont{
@@ -453,13 +546,6 @@ section#espacios .ver-mas-btn{
 
 
 
-section#almacen .background{
-	background-image: url(../img/bkground/home-bk.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 67vh;
-}
 
 
 section#almacen .background .text-cont{
@@ -487,13 +573,7 @@ section#almacen .ver-mas-btn{
 
 
 
-section#authentic .background{
-	background-image: url(../img/bkground/home-bk.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 67vh;
-}
+
 
 section#authentic .background .text-cont{
 	     position: absolute;
@@ -514,8 +594,37 @@ section#authentic .background .text-cont>h3{
 section#authentic .background .text-cont a{
 	color:#CD912A;
 	font-size: 2rem;
+    font-family: GothamBook;
+    transition:color 0.5s;
 }
 
+
+section#authentic .background .text-cont a:hover{
+    color:white;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
+section#authentic .gallery-col .viewport{
+    width: 100%;
+    max-width: 3000px;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: -30px;
+}
+
+section#authentic .horizontal{
+    width: 350%;
+    margin-bottom: 30px;
+}
+
+
+section#authentic .horizontal ul li{
+    display:inline-block;
+    float:left;
+}
 
 /*--------------- 			  --------------*/
 			/* contacto SECTION */
@@ -577,8 +686,153 @@ ul.flex{
     list-style:none;
 }
 
+footer ul li:nth-child(5) div:nth-child(1){
+    height: 50px;
+    width: 20px;
+}
+
+footer ul li:nth-child(5) div:nth-child(1) i{
+    vertical-align: -8px;
+}
+
+
+footer i{
+    color:white;
+}
 
 footer .iso{
 	width:22px;
 	filter:invert(100%);
 }
+
+
+/*---------------             --------------*/
+                  /* QUERYS */
+/*---------------             --------------*/
+
+@media only screen and (min-width: 10px) and (max-width: 414px) {
+
+    footer{
+        text-align:center; 
+    }
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation:portrait)  {
+    section{
+        text-align: center !important;
+    }
+
+    .main-title {
+        font-size: 7rem;
+    }
+
+    .bajada-right {
+        display:none;
+    }
+
+    hr.linea {
+        margin: auto;
+    }
+    .ver-mas-btn {
+     
+        width: 118px;
+    }
+
+
+    .background {
+
+        height: 80vh;
+    }
+
+
+    section#almacen .background .text-cont {
+     
+        width: 72%;
+      
+    }
+
+    
+    section#contacto .iso  {
+        margin: 12% 0px 12% 0px;
+    }
+
+    section#contacto .linea  {
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+
+
+    section#contacto .iso,section#contacto .ver-mas-btn  {
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+    }
+
+    section#contacto .col-sm-6,.ver-mas-btn{
+        margin: 12% 0px 12% 0px;
+    }
+
+
+ul.flex{
+      display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: stretch;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    list-style:none;
+}
+
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 850px) and (orientation:landscape) {
+     section{
+        text-align: center !important;
+    }
+
+    .background {
+
+        height: 150vh;
+    }
+
+    section#contacto .linea  {
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    section#contacto .iso, section#contacto .ver-mas-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.ver-mas-btn {
+     
+        width: 118px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+  
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+
+  
+}
+

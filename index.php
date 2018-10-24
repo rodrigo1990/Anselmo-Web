@@ -23,11 +23,11 @@
 
 		<div class="row">
 			<div class="container">
-				<div class="col-sm-6">
-					<img src="img/auth-1.jpg" class="" alt=""><br><br><br><br><br>
+				<div class="hidden-xs col-sm-6">
+					<img src="img/auth-1.jpg" class="img-responsive" alt=""><br><br><br><br><br>
 					<p class="text-box right bajada-right">Es el primer hotel en America Latina que se une a Curio A Collection by Hilton</p>
 				</div>
-				<div class="col-sm-6 description-cont">
+				<div class="hidden-xs col-sm-6 description-cont">
 					<div class="title">
 						<h3>HOTEL <br> ANSELMO</h3>
 						<hr class="linea text-left">
@@ -47,6 +47,39 @@
 
 
 				</div>
+
+				<div class="col-xs-12 hidden-sm hidden-md hidden-lg gallery-col">
+					<div class="viewport">
+						<div class="horizontal row">
+							<ul>
+								<li><img src="img/auth-1.jpg" class="" alt=""></li>
+								<li><img src="img/auth-2.jpg" alt="" class="left"></li>
+								<li><img src="img/auth-3.jpg" alt="" class="left"></li>
+							</ul>
+							
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 hidden-sm hidden-md hidden-lg gallery-col">
+					<div class="title">
+						<h3 class="text-center">HOTEL <br> ANSELMO</h3>
+						<hr class="linea text-center">
+						<br>
+					</div>
+					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+					<div class="ver-mas-btn center-block">
+						<a href="">
+							<div class="left">+</div><p class="left"><b>Ver más</b></p>
+						</a>
+					</div>
+
+
+				</div>
+
+
 			</div>
 		</div>	
 
@@ -55,7 +88,7 @@
 
 	<section id="espacios" class="section-margin-top">
 		<div class="row">
-				<div class="col-sm-12 background text-center">
+				<div class="col-sm-12 background text-center" style="background-image: url(img/bkground/home-bk.jpg);">
 					<div class="container">
 
 						<div class="text-cont">
@@ -78,7 +111,7 @@
 	
 	<section id="almacen" class="section-margin-top">
 		<div class="row">
-				<div class="col-sm-12 background text-center">
+				<div class="col-sm-12 background text-center" style="background-image: url(img/bkground/home-bk.jpg);">
 					<div class="container">
 
 						<div class="text-cont">
@@ -101,7 +134,7 @@
 
 	<section id="authentic" class="section-margin-top">
 		<div class="row">
-				<div class="col-sm-12 background text-center">
+				<div class="col-sm-12 background text-center" style="background-image: url(img/bkground/home-bk.jpg);">
 					<div class="container">
 
 						<div class="text-cont">
@@ -140,7 +173,7 @@
 						<input type="text" class="" placeholder="Mail">
 						<input type="text" class="" placeholder="Comentarios">
 						<br>
-						<div class="ver-mas-btn right">
+						<div class="ver-mas-btn">
 								<a href="">
 									<div class="left">+</div><p class="left"><b>Enviar</b></p>
 								</a>
