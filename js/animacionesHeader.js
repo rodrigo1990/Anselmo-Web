@@ -1,9 +1,8 @@
-$( document ).ready(function() {
 
 	$(window).scroll(function (event) {
 	    var scroll = $(window).scrollTop();
 
-	    if(scroll==100){
+	    if(scroll>=100){
 	        $("header").addClass("white-header");
 
 	        $("header nav ul li a").addClass("black-after");
@@ -22,10 +21,11 @@ $( document ).ready(function() {
 	        transition:"color 0.5s"
 	        });
 
-	      $(".fixed-btn").css({
-	      	right:"-1%",
-	      	transition:"right 0.5s"
-	      });
+	      $(".fixed-btn").fadeIn();
+
+	       $(".nav-collapse span").css({background:"black"});
+	      $(".nav-collapse span").addClass("nav-black-af nav-black-bef");
+	      
 
 
 
@@ -56,14 +56,14 @@ $( document ).ready(function() {
 	      	transition:"filter 0.5s"
 	      });
 
-	          $(".fixed-btn").css({
-	      	right:"-100%",
-	      	transition:"right 0.5s"
-	      });
+	          $(".fixed-btn").fadeOut();
+
+	          $(".nav-collapse span").css({background:"white"});
+	          $(".nav-collapse span").removeClass("nav-black-af nav-black-bef");
+
 	       
 	    }
 	    // Do something
 	});
 
 
-});

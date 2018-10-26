@@ -1,6 +1,6 @@
 <?php include("inc/head.php"); ?>
 <?php include("inc/header.php"); ?>
-	<a href="" class="fixed-btn">Reservar</a>
+	<!--  <a href="" class="fixed-btn">Reservar</a>-->
 
 	<section id="video-home">
 		<video  src="img/bkground-video/The-mirage.mp4" autoplay muted loop></video>
@@ -189,5 +189,6 @@
 
 
 <?php include("inc/footer.php"); ?>
+
 </body>
 </html>

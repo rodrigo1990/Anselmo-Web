@@ -12,7 +12,7 @@
 							<li><a href="">ENG</a></li>
 							<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href=""><i class="fab fa-instagram"></i></a></li>
-							<li><a href="">CALENDAR</a></li>
+							<li><a href=""><i class="far fa-calendar"></i></a></li>
 						</ul>
 					</div>
 					<div class="col-sm-12 main-nav-cont">
@@ -27,7 +27,24 @@
 						</ul>
 					</div>
 				</div>
+				<div class="col-xs-9 hidden-sm hidden-md hidden-lg">
+					<!-- Collapse nav button -->
+						<div class="nav-collapse "  >
+							<a onClick="mostrarMenu(); return false">
+								<span class=""></span>
+							</a>
+						</div>
+				</div>
 			</div>
 		</div>
 	</nav>
 </header>
+	<ul class="overlay-xs-menu">
+		<li><a href=""  class="xs-btn">HABITACIONES</a></li>
+		<li><a href=""  class="xs-btn">EVENTOS</a></li>
+		<li><a href=""  class="xs-btn">WINEBAR</a></li>
+		<li><a href=""  class="xs-btn">ALMACÉN</a></li>
+		<li><a href=""  class="xs-btn">PATIO</a></li>
+		<li><a href=""  class="xs-btn">CONTACTO</a></li>
+		<li><a href=""  class="xs-btn">AGENDA</a></li>
+	</ul>

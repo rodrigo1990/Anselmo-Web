@@ -33,6 +33,7 @@
 body{
 	background-color: white;
 	overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 h1,h2{
@@ -130,7 +131,7 @@ h3{
 	color:white;
 	transform: scale(1.1);
 
-	transition:transform 0.5s, color 0.5s;
+	transition:transform 0.5s,color 1s;
 }
 
 
@@ -171,6 +172,7 @@ h3{
         width: 0%;
         -webkit-transition: 0.2s width;
         transition: 0.2s width;
+        opacity:0;
 }
 
 .ver-mas-btn:hover div{
@@ -180,7 +182,8 @@ h3{
 
 .ver-mas-btn:hover p:after{
     width: 100%;
-    transition:width 0.25;
+    opacity:1;
+    transition:opacity 0.5s,width 0.25s;
 }
 
 
@@ -282,7 +285,7 @@ header:after{
 }
 
 .white-header:after {
-    background: rgba(225,225,225,0.8);
+    background: rgba(255, 255, 255, 0.9);
     transition:background 0.5s;
 }
 
@@ -306,6 +309,7 @@ header nav ul li a:after {
         background-color: white;
         height: 2px;
         width: 0%;
+        opacity:0;
         -webkit-transition: 0.2s width;
         transition: 0.2s width;
 
@@ -324,7 +328,8 @@ header nav ul li a:hover{
 
 header nav ul li a:hover:after {
         width:100%;
-        transition:width 1s;
+        opacity: 1;
+        transition:opacity 0.5s,width 0.2s;
 
     }
 
@@ -343,7 +348,7 @@ header nav .main-nav,header nav .second-nav{
 
 
 header nav .second-nav{
-	width: 239px;	
+	width: 166px;	
 }
 
 header nav .main-nav{
@@ -382,11 +387,115 @@ header nav .second-nav li a{
 
 }
 
-header nav .main-nav li a{
+header nav .main-nav li a,.overlay-xs-menu ul li a{
 	font-family: GothamBook;
 
 }
 
+  .nav-collapse span {
+    display: block;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    float:right;
+    width: 25px;
+    margin-top: 25px;
+}
+
+
+
+.nav-collapse span:before {
+    -webkit-transform: translate(0%, 10px);
+    -ms-transform: translate(0%, 10px);
+    transform: translate(0%, 10px);
+}
+
+
+.nav-collapse span:before, .nav-collapse span:after {
+    content: "";
+    /* display: block; */
+}
+
+.nav-collapse span:after {
+    -webkit-transform: translate(0%, -14px);
+    -ms-transform: translate(0%, -14px);
+    transform: translate(0%, -14px);
+}
+
+.nav-collapse span, .nav-collapse span:before, .nav-collapse span:after {
+        height: 4px;
+    background: white;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+.nav-collapse span:before, .nav-collapse span:after {
+    content: "";
+    display: block;
+}
+
+
+.nav-black-af:after{
+    background:black !important;
+    transition: background 0.2s;
+}
+
+.nav-black-bef:before{
+    background:black !important;
+    transition: background 0.2s;
+}
+
+.overlay-xs-menu{
+   
+}
+
+
+.overlay-xs-menu {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    z-index: 50000;
+    display:block;
+    background-color: rgba(255,255,255,0.8);
+    animation: openMenu .4s cubic-bezier(.19,1,.22,1);
+    padding-left: 0;
+    text-align: center;
+    display:none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.overlay-xs-menu  li{
+    margin-top: 14%;
+}
+
+.overlay-xs-menu  li a.xs-btn{
+    font-size: 2.3rem;
+    color:black;
+}
+
+.overlay-xs-menu li a.xs-btn:hover{
+    color:black;
+    text-decoration: none;
+}
+
+
+@keyframes openMenu{
+    0% {
+    bottom: 100%;
+    top: -100%;
+    opacity: 0;
+}
+1% {
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
 
 /*--------------- 			  --------------*/
 				/*VIDEO HOME SECTION*/
@@ -710,24 +819,41 @@ footer .iso{
                   /* QUERYS */
 /*---------------             --------------*/
 
-@media only screen and (min-width: 10px) and (max-width: 414px) {
+@media only screen and (min-width: 10px) and (max-width: 850px) {
+    
+     .main-title {
+        font-size: 7rem;
+    }
 
     footer{
         text-align:center; 
     }
 
+    section#almacen .background .text-cont {
+    width: 72%;
+}
+
+section#video-home .play-circle {
+    width: 70px;
+    height: 70px;
+    padding-top: 15px;
+   
+}
+
 }
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation:portrait)  {
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation:portrait)  {
+
+    .row{
+        margin-right: 0 !important;
+    }
     section{
         text-align: center !important;
     }
 
-    .main-title {
-        font-size: 7rem;
-    }
+   
 
     .bajada-right {
         display:none;
@@ -772,7 +898,7 @@ footer .iso{
         display:block;
     }
 
-    section#contacto .col-sm-6,.ver-mas-btn{
+    section#contacto .col-sm-6{
         margin: 12% 0px 12% 0px;
     }
 
@@ -788,10 +914,18 @@ ul.flex{
     list-style:none;
 }
 
+header:after{
+    height: 200% !important;
+}
+
 
 }
 
 @media only screen and (min-width: 320px) and (max-width: 850px) and (orientation:landscape) {
+
+    .row{
+        margin-right: 0 !important;
+    }
      section{
         text-align: center !important;
     }

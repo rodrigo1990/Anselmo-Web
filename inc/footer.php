@@ -17,3 +17,5 @@
 <script type="text/javascript" src="js/JQuery.min.js"></script>
 <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/animacionesHeader.js"></script>
+<script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript" src="js/mostrarXsMenu.js"></script>
